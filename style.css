@@ -4,20 +4,24 @@
 }
 header {
     background-color: black;
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 header ul {
     position: absolute;
     right: 5vw;
     top: 0;
-    line-height: 80px;
+    line-height: 100px;
 }
 h1 {
     position: absolute;
-    left: 120px;
+    left: 30px;
     top: 0;
-    line-height: 80px;
+    line-height: 85px;
+    background-image: url(sansahgai.png);
+    background-position: center;
+    width: 330px;
+    text-indent: -9999px;
 }
 h1 {
     color: white;
@@ -32,4 +36,29 @@ header a {
 }
 header a:hover {
     text-decoration: underline;
+}
+.menu {
+    display: none;
+}
+
+/* 响应式设计语法 */
+@media screen  and (max-width: 1000px) {
+    header ul{
+        display:none;
+    } 
+    header h1 {
+        left:50%;
+        transform: translateX(-50%);
+    } 
+    .menu {
+        display: block;
+        background-color: black;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
 }
