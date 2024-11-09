@@ -5,39 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎来到三傻的网页</title>
     <link rel="stylesheet" href="style.css">
+    <div class="a"></div>
+    <!--      搜索框区域          -->
+    <style>
+    .a{                                                        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #2f3640;
+        height: 30px;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    .a:hover .b{
+        width: 200px;
+        padding: 0 6px;
+    }
+    .a:hover .c{
+        background-color: wheat;
+    }
+    .b{
+        border: none;
+        background: none;
+        /*  取消选中搜索框时的外边框*/
+        outline: none;
+        width: 0;
+        padding: 0;
+        transition: .4s;
+        line-height: 40px;
+        font-size: 20px;
+        color: wheat;
+    }
+    .c{
+    color: black;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    }
+    </style>  
+    <!--       搜索框截止           -->
 </head>
 <body>
     <header>
-    <button class="menu">&#9776;</button>
     <h1>三傻大闹Web</h1>
     <nav>
     <ul>
-        <li><a href="https://www.sxzy.edu.cn/">学校官网</a></li>
-        <li><a href="ps/Photo.html">我的相册</a></li>
-        <li><a href="Document/Doc.html">我的文件</a></li>
+        <li><a href="#">我的主页</a></li>
+        <li><a href="#">我的文件</a></li>
         <li><a href="#">我的助手</a></li>
+        <li><a href="#">我的网页</a></li>
         <li><a href="LoginIS/index.html">登录/注册</a></li>
     </ul>
     </nav>
     </header>
+     <!-- 搜索框显示区域 -->
+   <div class="a">                                                 
+        <input type="text"class="b">
+        <a href="#" class="c"> 
+             <img src="搜索框.png.png" style="width: 25px;">
+        </a>
+    </div>                                                          
+    <!--搜索框显示区域截止-->
     <main>
-        <section> <!-- 第一区域 -->
+        
+        <section>
         <h2>三傻大闹Web</h2>
         </section>
+       
 
-       <section>  <!-- 第二段落 -->
+        <section>
         <p>123456</p>
         </section>
 
-        <section> <!-- 第三区域 -->
+        <section>
         <p>123478</p>
         <p>123415</p>
         <p>123425</p>
         </section>
     <blockquote cite="#">234<br>567</blockquote>
     </main>
-    <footer>
+   <footer>
         <p>copyright</p>
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+
+
+
+
